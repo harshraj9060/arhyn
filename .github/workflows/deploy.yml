@@ -33,9 +33,7 @@ jobs:
       - name: Build static export
         env:
           DEPLOY_TARGET: gh-pages
-          # Set this to /<repo-name> if deploying to https://<user>.github.io/<repo-name>/
-          # Leave empty if deploying to a custom domain or a <user>.github.io root repo.
-          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_BASE_PATH: "/arhyn"
         run: npm run build
 
       - name: Setup Pages

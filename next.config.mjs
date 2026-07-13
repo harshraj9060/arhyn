@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
+
 const isGithubPages = process.env.DEPLOY_TARGET === "gh-pages";
 
-// If deploying to https://<user>.github.io/<repo>/,
-// set NEXT_PUBLIC_BASE_PATH="/<repo>"
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const repo = "arhyn";
 
 const nextConfig = {
   output: "export",
@@ -14,9 +13,9 @@ const nextConfig = {
 
   trailingSlash: true,
 
-  basePath: isGithubPages ? basePath : "",
+  basePath: isGithubPages ? `/${repo}` : "",
 
-  assetPrefix: isGithubPages ? basePath : undefined,
+  assetPrefix: isGithubPages ? `/${repo}/` : "",
 
   eslint: {
     ignoreDuringBuilds: true,
