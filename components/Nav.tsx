@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
-
+import ThemeToggle from "./ThemeToggle";
 const links = [
   { href: "#services", label: "Services" },
   { href: "#industries", label: "Industries" },

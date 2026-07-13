@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  background: #0b0d10;
+body{
+
+background:var(--bg);
+
+color:var(--text);
+
+transition:
+
+background .35s,
+
+color .35s;
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -62,8 +71,12 @@ body {
   color: #e8a33d;
 }
 
-.card-glow {
-  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+.card-glow{
+
+border-color:var(--line);
+
+background:var(--bg-soft);
+
 }
 .card-glow:hover {
   border-color: rgba(232,163,61,0.45);
@@ -85,4 +98,38 @@ button:focus-visible {
 
 .magnetic-btn {
   transition: transform 0.25s cubic-bezier(.2,.8,.2,1), background 0.25s ease, box-shadow 0.25s ease;
+}
+:root{
+
+  --bg:#ffffff;
+
+  --bg-soft:#f7f7f8;
+
+  --bg-raised:#ffffff;
+
+  --text:#171717;
+
+  --text-dim:#5f6368;
+
+  --line:rgba(0,0,0,.08);
+
+  --amber:#E8A33D;
+
+  --wire:#6FA8A0;
+
+}
+.dark{
+
+  --bg:#0B0D10;
+
+  --bg-soft:#12151A;
+
+  --bg-raised:#181C22;
+
+  --text:#EDEBE4;
+
+  --text-dim:#9A9CA1;
+
+  --line:rgba(237,235,228,.09);
+
 }

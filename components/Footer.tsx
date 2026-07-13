@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter, InstagramIcon } from "lucide-react";
 
 const nav = [
   { href: "#services", label: "Services" },
@@ -51,6 +51,9 @@ export default function Footer() {
               </a>
               <a href="#" aria-label="Twitter / X" className="text-dim hover:text-amber transition-colors">
                 <Twitter size={18} />
+              </a>
+              <a href="#" aria-label="Instagram" className="text-dim hover:text-amber transition-colors">
+                <InstagramIcon size={18} />
               </a>
             </div>
           </div>

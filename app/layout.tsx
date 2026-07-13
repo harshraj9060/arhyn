@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, Instrument_Serif, IBM_Plex_Mono } from "next/font
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { toast } from "react-hot-toast";
+import ThemeProvider from "@/components/ThemeProvider";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
