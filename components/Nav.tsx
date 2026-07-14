@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
+import LanguageSelector from "./LanguageSelector";
+
 const links = [
   { href: "#services", labelKey: "nav.services" },
   { href: "#industries", labelKey: "nav.industries" },
@@ -55,6 +57,8 @@ export default function Nav() {
           >
             {t("nav.freeAudit")}
           </a>
+&nbsp;&nbsp;
+                        <LanguageSelector />
         </div>
 
         <button
