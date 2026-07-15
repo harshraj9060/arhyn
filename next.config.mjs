@@ -2,7 +2,7 @@
 
 const repo = "arhyn";
 
-// true only when deploying to https://<username>.github.io/arhyn
+// true only when deploying to https://<username>.github.io/arhyntech
 const isGithubPages = process.env.USE_GITHUB_PAGES === "true";
 
 const nextConfig = {
