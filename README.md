@@ -6,7 +6,7 @@ A production-ready marketing site for Arhyn Technologies, a digital
 transformation / AI automation / custom software studio. Built with the
 Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion, and shipped
 as a fully static export so it can be hosted anywhere — including GitHub
-Pages — with zero server.
+Pages — with zero servers.
 
 ## Design system
 
