@@ -82,8 +82,7 @@ export default function Nav() {
             >
               {t(l.labelKey)}
             </a>
-          // &nbsp;&nbsp;
-                        <LanguageSelector />
+          
           ))}
           <a
             href="#contact"
