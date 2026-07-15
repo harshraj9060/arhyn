@@ -1,17 +1,18 @@
 /** @type {import('next').NextConfig} */
 
-const isGithubPages = process.env.DEPLOY_TARGET === "gh-pages";
-
 const repo = "arhyn";
+
+// true only when deploying to https://<username>.github.io/arhyn
+const isGithubPages = process.env.USE_GITHUB_PAGES === "true";
 
 const nextConfig = {
   output: "export",
 
+  trailingSlash: true,
+
   images: {
     unoptimized: true,
   },
-
-  trailingSlash: true,
 
   basePath: isGithubPages ? `/${repo}` : "",
 
